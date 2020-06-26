@@ -1,0 +1,112 @@
+body{
+    grid-area:body;
+    font-family: 'Roboto Slab' serif;
+    background: rgb(52, 54, 54);
+    margin: 0;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 60px auto 60px;
+}
+.container{
+    grid-area:container;
+    height: 340px;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20%);
+    background: rgba(250, 250, 250, 0.5);
+    border: 1px solid #08028c;
+    box-shadow: 0 0 8px 3px #fff;
+}
+
+
+header{
+    grid-area: header;
+    background-color: #0c151b;
+    color:rgb(255, 253, 253);
+    min-height: 30px;
+    padding: 3px 0 0 0;
+    text-align: center;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #070b1b;
+
+}
+.question{
+    padding: 20px;
+    font-size: 22px;
+    background: #13121d;
+    border-radius: 20px;
+    margin: 10px 0 10px 0;
+    color: #f6f6f6;
+}
+.option{
+    width: 470px;
+    display: inline-block;
+    padding: 10px 0 10px 15px;
+    vertical-align: middle;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0 10px 10px;
+    color: #000000;
+    border-radius: 20px;
+}
+.option:hover{
+    background: #8c2e03;
+    color: #f6f6f6;
+}
+.next-btn{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: right;
+    margin: 10px;
+
+}
+.previous-btn{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    float: left;
+    margin: 10px;
+
+}
+.next-btn:hover{
+    background: #8c0303;
+    color: #fdfdfd;
+}
+.previous-btn:hover{
+    background: #8c0303;
+    color: #f3efef;
+}
+.result{
+    height: 100px;
+    text-align: center;
+    font-size: 75px;
+}
+.option input:checked .option{
+    background: #08038C;
+    color: 000;
+}
+#footer{
+    background-color: black;
+    color:rgb(188, 207, 198);
+    padding: px; 
+    text-align: end;
+    grid-area: footer;
+}
