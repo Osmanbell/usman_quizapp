@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: samplerepoacr.azurecr.io/comp_quizapp:latest
+          image: newacrdemo.azurecr.io/comp_quizapp:latest
           ports:
             - containerPort: 80
 ---
