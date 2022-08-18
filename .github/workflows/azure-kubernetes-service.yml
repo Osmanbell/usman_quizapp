@@ -35,7 +35,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: "plsacr1.azurecr.io"
-  CONTAINER_NAME: "helloworld:latest"
+  CONTAINER_NAME: "comp_quizapp:latest"
   RESOURCE_GROUP: "plsdemo1"
   CLUSTER_NAME: "plsaks1"
   #IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
@@ -121,4 +121,4 @@ jobs:
         images: |
           ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
         #imagepullsecrets: |
-        # ${{ env.IMAGE_PULL_SECRET_NAME }}
+        #  ${{ env.IMAGE_PULL_SECRET_NAME }}
