@@ -38,7 +38,7 @@ env:
   CONTAINER_NAME: "helloworld:latest"
   RESOURCE_GROUP: "plsdemo1"
   CLUSTER_NAME: "plsaks1"
-  IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
+  #IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
   DEPLOYMENT_MANIFEST_PATH: 'comp-app.yaml'
 
 jobs:
@@ -120,5 +120,5 @@ jobs:
         manifests: ${{ env.DEPLOYMENT_MANIFEST_PATH }}
         images: |
           ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io/${{ env.CONTAINER_NAME }}:${{ github.sha }}
-        imagepullsecrets: |
-          ${{ env.IMAGE_PULL_SECRET_NAME }}
+        #imagepullsecrets: |
+        # ${{ env.IMAGE_PULL_SECRET_NAME }}
