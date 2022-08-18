@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: plsacr1.azurecr.io/helloworld:latest
+          image: plsacr1.azurecr.io/comp_quizapp:latest
           ports:
             - containerPort: 80
 ---
