@@ -13,7 +13,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'cde7c1c7-f651-4155-b981-cbe9cdf1e7b7'
   imageRepository: 'promiseigbopipelinesusmanquizapp'
-  containerRegistry: 'newacrdemo.azurecr.io'
+  containerRegistry: 'testacr90.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   #imagePullSecret: 'newdemoazurecr8f44-auth'
