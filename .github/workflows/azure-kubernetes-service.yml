@@ -36,8 +36,8 @@ on:
 env:
   AZURE_CONTAINER_REGISTRY: "testacr90.azurecr.io"
   CONTAINER_NAME: "comp_quizapp:latest"
-  RESOURCE_GROUP: "plsdemo1"
-  CLUSTER_NAME: "plsaks1"
+  RESOURCE_GROUP: "test-rg"
+  CLUSTER_NAME: "testaks"
   #IMAGE_PULL_SECRET_NAME: "your-image-pull-secret-name"
   DEPLOYMENT_MANIFEST_PATH: 'comp-app.yaml'
 
